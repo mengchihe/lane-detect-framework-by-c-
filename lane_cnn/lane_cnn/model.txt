@@ -1,0 +1,62 @@
+Data		input		data n=1 c=3 h=256 w=512
+
+Convolution	conv1		data conv1 k=3 c=16 s=1 p=1
+BatchNorm	bn1		conv1 bn1
+Relu		relu1		bn1 relu1
+Pooling		pool1		relu1 pool1 k=2 s=2
+
+Convolution	conv2		pool1 conv2 k=3 c=32 s=1 p=1
+BatchNorm	bn2		conv2 bn2
+Relu		relu2		bn2 relu2
+Pooling		pool2		relu2 pool2 k=2 s=2
+
+Convolution	conv3_1		pool2 conv3_1 k=3 c=64 s=1 p=1
+BatchNorm	bn3_1		conv3_1 bn3_1
+Relu		relu3_1		bn3_1 relu3_1
+Convolution	conv3_2		relu3_1 conv3_2 k=1 c=32 s=1 p=0
+BatchNorm	bn3_2		conv3_2 bn3_2
+Relu		relu3_2		bn3_2 relu3_2
+Pooling		pool3		relu3_2 pool3 k=2 s=2
+
+Convolution	conv4_1		pool3 conv4_1 k=3 c=64 s=1 p=1
+BatchNorm	bn4_1		conv4_1 bn4_1
+Relu		relu4_1		bn4_1 relu4_1
+Convolution	conv4_2		relu4_1 conv4_2 k=1 c=32 s=1 p=0
+BatchNorm	bn4_2		conv4_2 bn4_2
+Relu		relu4_2		bn4_2 relu4_2
+Convolution	conv4_3		relu4_2 conv4_3 k=3 c=64 s=1 p=1
+BatchNorm	bn4_3		conv4_3 bn4_3
+Relu		relu4_3		bn4_3 relu4_3
+Pooling		pool4		relu4_3 pool4 k=2 s=2
+
+Convolution	conv5_1		pool4 conv5_1 k=3 c=128 s=1 p=1
+BatchNorm	bn5_1		conv5_1 bn5_1
+Relu		relu5_1		bn5_1 relu5_1
+Convolution	conv5_2		relu5_1 conv5_2 k=1 c=64 s=1 p=0
+BatchNorm	bn5_2		conv5_2 bn5_2
+Relu		relu5_2		bn5_2 relu5_2
+Convolution	conv5_3		relu5_2 conv5_3 k=3 c=128 s=1 p=1
+BatchNorm	bn5_3		conv5_3 bn5_3
+Relu		relu5_3		bn5_3 relu5_3
+Pooling		pool5		relu5_3 pool5 k=2 s=2
+
+Convolution	score5		pool5 score5 k=1 c=64 s=1 p=0
+
+Resize		resize4		score5 resize4 h_ratio=0.5 w_ratio=0.5
+Convolution	score4		pool4 score4 k=1 c=64 s=1 p=0
+Concat		concat4		resize4 score4 concat4
+
+Resize		resize3		concat4 resize3 h_ratio=0.5 w_ratio=0.5
+Convolution	score3		pool3 score3 k=1 c=64 s=1 p=0
+Concat		concat3		resize3 score3 concat3
+
+Resize		resize2		concat3 resize2 h_ratio=0.5 w_ratio=0.5
+Convolution	score2		pool2 score2 k=1 c=64 s=1 p=0
+Concat		concat2		resize2 score2 concat2
+
+Resize		resize1		concat2 resize1 h_ratio=0.5 w_ratio=0.5
+Convolution	score1		pool1 score1 k=1 c=64 s=1 p=0
+Concat		concat1		resize1 score1 concat1
+
+Resize		resize0		concat1 resize0 h_ratio=0.5 w_ratio=0.5
+Convolution	output		resize0 output k=1 c=2 s=1 p=0

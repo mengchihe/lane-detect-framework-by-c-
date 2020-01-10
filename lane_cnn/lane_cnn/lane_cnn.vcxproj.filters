@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\cnn">
+      <UniqueIdentifier>{e4b33aed-1564-4e6a-a1db-0de8e3efead3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\cnn">
+      <UniqueIdentifier>{8c2b2552-cab7-42f2-a394-2e007254e256}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\batch_norm_layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\conv_layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\relu_layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\tensor.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\net.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="semantic_seg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\memory.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\cnn_common.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\pooling_layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\resize_layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\concat_layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+    <ClCompile Include="cnn_hmc\src\data_layer.cpp">
+      <Filter>源文件\cnn</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\batch_norm_layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\conv_layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\relu_layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\tensor.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\cnn_hmc.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\cnn_common.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\net.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="semantic_seg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\memory.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\pooling_layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\resize_layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\concat_layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+    <ClInclude Include="cnn_hmc\include\data_layer.h">
+      <Filter>头文件\cnn</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

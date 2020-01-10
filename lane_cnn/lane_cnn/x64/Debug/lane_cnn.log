@@ -1,0 +1,9 @@
+﻿  semantic_seg.cpp
+d:\opencv\build\include\opencv2\core\mat.hpp(2586): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\opencv\build\include\opencv2\core\persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\opencv\build\include\opencv2\core\utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+d:\opencv\build\include\opencv2\flann\logger.h(33): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+  d:\opencv\build\include\opencv2\flann\logger.h(33): note: 命令行参数: 参见前面的“_CRT_SECURE_NO_WARNINGS”定义
+d:\opencv\build\include\opencv2\imgproc.hpp(592): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  lane_cnn.vcxproj -> D:\cprogramme\lane_cnn\x64\Debug\lane_cnn.exe
